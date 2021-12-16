@@ -2,6 +2,8 @@
 #include <map>
 #include <vector>
 
+// union find
+
 using namespace std;
 
 int numIslands(vector<vector<char>>& grid) {
