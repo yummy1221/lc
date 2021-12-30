@@ -26,6 +26,11 @@ for ((k, v) <- map) process k and v
 for (k <- map.keySet) process k
 for (v <- map.values) process v
 
+// ---------- Array
+val arr
+arr.length
+arr.isEmpty
+
 // Array: when length is fixed, values mutable
 // ArrayBuffer: when length can vary
 val s = Array[Int](10)     // Array with 1 element 10
