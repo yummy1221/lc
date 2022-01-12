@@ -21,6 +21,9 @@ io.StdIn.readInt()
 for (i <- expression)
   do operation
 
+for (i <- 1 to 3) // 1, 2, 3
+for (i <- 1 until 3) // 1, 2
+
 for (i <- 1 to 3; j <- 1 to 10) // for loop i outer, for loop j inner, two for loops
 for (i <- 1 to 3; from = 4 - i; j <- from to 10) yield i+j // for comprehension
 
