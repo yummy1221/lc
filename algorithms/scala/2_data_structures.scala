@@ -31,6 +31,9 @@ val arr
 arr.length
 arr.isEmpty
 
+arr.sortWith(_ < _) // 1, 2, 3, 4, 5
+arr.sortWith(_ > _) // 5, 4, 3, 2, 1
+
 // Array: when length is fixed, values mutable
 // ArrayBuffer: when length can vary
 val s = Array[Int](10)     // Array with 1 element 10
@@ -52,4 +55,34 @@ s.filter(_ % 2 == 0).map(_ * 2)
 val mt = new Array[Array[Int]](10)
 for (i <- mt.indices) mt(i) = new Array[Int](i + 1)
 
-//
+/**
+  * Array List ArrayBuffer
+  */
+val buf = collection.mutable.ArrayBuffer.empty[List[Int]]
+buf.toList
+
+/**
+  * Queue
+  */
+val q = collection.mutable.Queue(root)
+q.nonEmpty
+q.isEmpty
+q.length
+
+/**
+  * Priority Queue
+  */
+val pq = collection.mutable.PriorityQueue.empty[Int](Ordering[Int].reverse)
+val pq = collection.mutable.PriorityQueue[ListNode]()(Ordering.by(node => node.x)).reverse
+pq.dequeue()
+pq.head
+
+/**
+  * Map
+  */
+val m = collection.mutable.Map[Int, Int]()
+
+/**
+  * Set
+  */
+val allNumbers = collection.mutable.Set[Int]()
