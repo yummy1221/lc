@@ -1,0 +1,44 @@
+// swap every two node in a linked list
+
+class Node(_next: Node, _value: Int) {
+	val next = _next
+	val value = _value
+}
+
+class A {
+	def swapAdjacentNodes(root: Node) : Node = {
+		if (root == null) return null
+		val dummyNode = Node(root, 0)
+
+		var previous = dummyNode
+		var i1 = root
+		var i2 = root.next
+
+		while (i1 != null && i2 != null) {
+			i1.next = i2.next 			// i1 -> 3
+			i2.next = i1 				// i2 -> i1
+			previous.next = i2			// previous -> i2 -> i1
+			previous = i1
+			i1 = i1.next
+			i2 = if (i1 != null) i1.next else null
+		}
+
+		return dummyNode.next
+	}
+}
+
+// 1 2 3 4 5 6 => 2 1 4 3 6 5
+// dummy -> 1 -> 2 -> 3 -> 4
+//          i1   i2   i1   i2   i1  i2
+
+// swap
+
+// i1 != i2
+// previous = dummy
+// i1.next = i2.next => i1 -> 3
+// i2.next = tmp => i2 -> i1
+// previous.next = i2
+
+// previous = i1
+
+
