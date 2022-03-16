@@ -31,8 +31,12 @@ val arr
 arr.length
 arr.isEmpty
 
+Array.fill(26)(-1)
+
 arr.sortWith(_ < _) // 1, 2, 3, 4, 5
 arr.sortWith(_ > _) // 5, 4, 3, 2, 1
+
+intervals.sortBy(x => (x(0), x(1)))(Ordering.Tuple2(Ordering.Int, Ordering.Int.reverse))
 
 // Array: when length is fixed, values mutable
 // ArrayBuffer: when length can vary
@@ -74,6 +78,8 @@ q.length
   */
 val pq = collection.mutable.PriorityQueue.empty[Int](Ordering[Int].reverse)
 val pq = collection.mutable.PriorityQueue[ListNode]()(Ordering.by(node => node.x)).reverse
+// -x means reverse
+val pq = collection.mutable.PriorityQueue[((Int, Int), Int)]()(Ordering.by(x => (-x._2, -x._1._1, -x._1._2)))
 pq.dequeue()
 pq.head
 

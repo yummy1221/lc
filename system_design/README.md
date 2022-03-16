@@ -23,6 +23,7 @@
 ## Steps
 
 1. scenario
+  What features
 2. service
 3. storage
 
@@ -40,4 +41,3 @@ not perfect solution
 
 ## Resources
 
-1. 九章算法 system design
