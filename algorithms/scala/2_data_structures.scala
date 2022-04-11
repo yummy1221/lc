@@ -87,6 +87,7 @@ pq.head
   * Map
   */
 val m = collection.mutable.Map[Int, Int]()
+arr.groupBy(x => x).view.mapValues(x => x.length).toMap
 
 /**
   * Set
