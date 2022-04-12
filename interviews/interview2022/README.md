@@ -2,8 +2,7 @@
 
 ## China
 
-### Booking.com
-Shanghai
+### Booking.com (Shanghai)
 
 Monday 03/20/2022 11:00am CST
 technical video interview-Algorithms, data structures and problem-solving
@@ -16,6 +15,10 @@ Fit Interview
 
 ### Apple
 03/25/2022 submit resume
+
+### LinkedIn (Beijing)
+
+Monday 04/11/2022 submit resume
 
 ## USA
 
