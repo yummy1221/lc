@@ -15,10 +15,13 @@ Fit Interview
 
 ### Apple
 03/25/2022 submit resume
-Wed Apr 14, 2022 11:00pm PST: talk with HR
+Wed Apr 14, 2022 11:00pm PST: talk with HR, interview coordinator: Lucy Huang
+Monday Apr 18, 2022 6:30pm PST: 3 round technical interview
+
 ### LinkedIn (Beijing)
 
 Monday 04/11/2022 submit resume
+
 
 ## USA
 

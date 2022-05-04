@@ -37,6 +37,7 @@ arr.sortWith(_ < _) // 1, 2, 3, 4, 5
 arr.sortWith(_ > _) // 5, 4, 3, 2, 1
 
 intervals.sortBy(x => (x(0), x(1)))(Ordering.Tuple2(Ordering.Int, Ordering.Int.reverse))
+times.sortBy(x => (x._1, x._2))
 
 // Array: when length is fixed, values mutable
 // ArrayBuffer: when length can vary
@@ -72,6 +73,15 @@ val q = collection.mutable.Queue(root)
 q.nonEmpty
 q.isEmpty
 q.length
+
+/**
+  * Dequeue
+  */
+val dq = collection.mutable.ArrayDeque[Int]()
+dq.head
+dq.last
+dq.removeHead()
+dq.removeLast()
 
 /**
   * Priority Queue
