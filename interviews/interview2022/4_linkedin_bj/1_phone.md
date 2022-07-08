@@ -1,5 +1,5 @@
 Monday Apr 25, 2022
-7:00pm to 8:00pm PDT Time with (Gaoqi Zheng)[https://www.linkedin.com/in/gaoqi-zheng-3a012365/?originalSubdomain=cn]
+7:00pm to 8:00pm PDT Time with [Gaoqi Zheng](https://www.linkedin.com/in/gaoqi-zheng-3a012365/?originalSubdomain=cn)
 
 ## Round 1
 
@@ -10,7 +10,7 @@ Monday Apr 25, 2022
 2. RPC call, thrift framework components, thrift 连接池的高效复用
 3. thrift framework vs Google protobuff
 4. What is OS, what it provides up and down
-5. JVS vs OS
+5. JVM vs OS
 6. Database types, development in the past several years
 7. CPU utilization when will be high
 
